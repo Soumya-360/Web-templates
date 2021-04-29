@@ -36,21 +36,23 @@ body
     font-size: 50px;
     font-family: cursive;
 }
+.Username
+{
+    font-size: 30px;
+}
 .Numbers
 {
-    display: flex;
-    align-items: center;
-    padding: 25px;
-}
-.individual
-{
     font-size: 25px;
-    font-family: cursive;
-    padding: 25px;
 }
 @media (max-width: 550px) and (min-width: 290px)
 {
     .Name{
         font-size: 35px;
+    }
+    .Username{
+        font-size: 20px;
+    }
+    .Numbers{
+        font-size: 15px;
     }
 }
