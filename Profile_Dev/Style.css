@@ -55,6 +55,7 @@ body
     height: 300px;
     width: 400px;
     padding: 10px;
+    border-radius: 40px;
 }
 @media (max-width: 1207px) and (min-width: 907px)
 {
@@ -63,6 +64,7 @@ body
         height: 200px;
         width: 300px;
         padding: 2px;
+        border-radius:15x;
     }
 }
 @media (max-width: 907px) and (min-width: 762px)
@@ -72,6 +74,7 @@ body
         height: 190px;
         width: 290px;
         padding: 2px;
+        border-radius: 15px;
     }
 }
 @media (max-width: 762px) and (min-width: 608px)
@@ -81,6 +84,7 @@ body
         height: 150px;
         width: 200px;
         padding: 2px;
+        border-radius: 15px;
     }
 }
 @media (max-width: 608px) and (min-width: 459px)
@@ -90,6 +94,7 @@ body
         height: 120px;
         width: 150px;
         padding: 2px;
+        border-radius: 9px;
     }
 }
 @media (max-width: 459px)
@@ -99,6 +104,7 @@ body
         height: 90px;
         width: 100px;
         padding: 2px;
+        border-radius: 9px;
     }
 }
 @media (max-width: 550px) and (min-width: 354px)
