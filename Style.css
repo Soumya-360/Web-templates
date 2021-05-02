@@ -72,9 +72,13 @@ body
     .posts
     {
         height: 190px;
-        width: 290px;
+        width: 250px;
         padding: 2px;
         border-radius: 15px;
+    }
+    .profile
+    {
+        width: 40%;
     }
 }
 @media (max-width: 762px) and (min-width: 608px)
@@ -111,7 +115,8 @@ body
 {
     .profile
     {
-        width: 35%;
+        width: 38%;
+        height: 38%;
         border-radius: 150px;
         padding: 15px;
     }
@@ -161,7 +166,17 @@ body
         font-size: 15px;
     }
 }
-@media (max-width: 336px)
+@media (max-width:280px)
+{
+    .posts
+    {
+        height: 90px;
+        width: 90px;
+        padding: 2px;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 336px) and (min-width:279px)
 {
     .profile
     {
