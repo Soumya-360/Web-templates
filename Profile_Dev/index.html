@@ -278,6 +278,82 @@ function closeForm() {
       border-radius: 15px;
   }
 }
+
+@media (max-width: 280px)
+{
+    .profile
+    {
+        width: 90px;
+        height: 90px;
+        border-radius: 150px;
+        padding: 1px;
+    }
+    .Name{
+        font-size: 20px;
+    }
+    .Username{
+        font-size: 12px;
+    }
+    .Numbers{
+        font-size: 12px;
+    }
+    .button
+    {
+        height: 25px;
+        width: 60px;
+        border-radius: 20px;
+        color:burlywood;
+        background-color: rgb(48, 7, 87);
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 505px) and (min-width:366px)
+{
+  .texts
+  {
+    font-size: 25px;
+  }
+  .messages
+  {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 366px)
+{
+  .texts
+  {
+    font-size: 20px;
+  }
+  .messages
+  {
+    margin-right: 5px;
+  }
+}
+#messages:target
+{
+    display: none;
+}
+#post:target
+{
+    display: none;
+}
+.header
+{
+  font-size: 35px;
+  font-family: "Montez",cursive;
+}
+.texts
+{
+  font-size: 30px;
+  font-family: 'Noto Serif',serif;
+}
+.hr_style
+{
+  height: 2px;
+  border-radius: 4px;
+  background:linear-gradient(to left,  rgb(198, 241, 128),rgb(226, 226, 55));
+}
 </style>
 
 <script data-ad-client="ca-pub-7316428934332522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -338,26 +414,40 @@ function closeForm() {
                   </span>
               </div>
               <div class="Buttons-Section">
-                  <button class="button"><a href="index.html" style="color: burlywood; text-decoration: none;">Posts</a></button>
-                  <button class="button"><a href="messages.html" style="color: burlywood; text-decoration: none;">Messages</a></button>
+                  <button class="button post-click" onclick="reload()"><a href="Testing.html" style="color: burlywood; text-decoration: none;">Posts</a></button>
+                  <button class="button message-click" onclick="change_message()"><a href="#post" style="color: burlywood; text-decoration: none;">Messages</a></button>
               </div>
           </div>
         </div>
-        <div class="gallery">
-          <img src="Gallery1.jpg" alt="" class="posts">
-          <img src="Gallery2.jpg" alt="" class="posts">
-          <img src="Gallery3.jpg" alt="" class="posts">
+        <script>
+          function reload(){
+            location.reload;
+          }
+        </script>
+        <div id="post-div">
+        <div class="post" id="post">
+            <div class="gallery">
+                <img src="Gallery1.jpg" alt="" class="posts">
+                <img src="Gallery2.jpg" alt="" class="posts">
+                <img src="Gallery3.jpg" alt="" class="posts">
+              </div>
+              <div class="gallery">
+                <img src="Gallery2.jpg" alt="" class="posts">
+                <img src="Gallery1.jpg" alt="" class="posts">
+                <img src="Gallery3.jpg" alt="" class="posts">
+              </div>
+              <div class="gallery">
+                <img src="Gallery3.jpg" alt="" class="posts">
+                <img src="Gallery2.jpg" alt="" class="posts">
+                <img src="Gallery1.jpg" alt="" class="posts">
+              </div>
         </div>
-        <div class="gallery">
-          <img src="Gallery2.jpg" alt="" class="posts">
-          <img src="Gallery1.jpg" alt="" class="posts">
-          <img src="Gallery3.jpg" alt="" class="posts">
         </div>
-        <div class="gallery">
-          <img src="Gallery3.jpg" alt="" class="posts">
-          <img src="Gallery2.jpg" alt="" class="posts">
-          <img src="Gallery1.jpg" alt="" class="posts">
-        </div>
+        <script>
+          function change_message(){
+            document.getElementById("post-div").innerHTML = "<div class='messages' id='messages'><div class='header'>My Messages</div><hr class= 'hr_style'> </hr><ul> <li> <span class='texts'>Message 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, aut?</span></li><li><span class='texts'>Message 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit!</span></li><li><span class='texts'>Message 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, id.</span></li><li><span class='texts'>Message 1 Lorem ipsum dolor sit amet consectetur adipisicing.</span></li></ul></div>";
+          }
+          </script>
       </div>
     </body>
 </html>
