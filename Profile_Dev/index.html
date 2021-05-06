@@ -307,29 +307,6 @@ function closeForm() {
         font-size: 10px;
     }
 }
-
-@media (max-width: 505px) and (min-width:366px)
-{
-  .texts
-  {
-    font-size: 25px;
-  }
-  .messages
-  {
-    margin-right: 10px;
-  }
-}
-@media (max-width: 366px)
-{
-  .texts
-  {
-    font-size: 20px;
-  }
-  .messages
-  {
-    margin-right: 5px;
-  }
-}
 #messages:target
 {
     display: none;
@@ -353,6 +330,28 @@ function closeForm() {
   height: 2px;
   border-radius: 4px;
   background:linear-gradient(to left,  rgb(198, 241, 128),rgb(226, 226, 55));
+}
+@media (max-width: 505px) and (min-width:366px)
+{
+  .header
+  {
+    font-size: 20px;
+  }
+  .texts
+  {
+    font-size: 15px;
+  }
+}
+@media (max-width: 366px)
+{
+  .header
+  {
+    font-size: 23px;
+  }
+  .texts
+  {
+    font-size: 15px;
+  }
 }
 </style>
 
@@ -414,7 +413,7 @@ function closeForm() {
                   </span>
               </div>
               <div class="Buttons-Section">
-                  <button class="button post-click" onclick="reload()"><a href="Testing.html" style="color: burlywood; text-decoration: none;">Posts</a></button>
+                  <button class="button post-click" onclick="reload()"><a href="index.html" style="color: burlywood; text-decoration: none;">Posts</a></button>
                   <button class="button message-click" onclick="change_message()"><a href="#post" style="color: burlywood; text-decoration: none;">Messages</a></button>
               </div>
           </div>
