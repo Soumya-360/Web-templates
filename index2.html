@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<script>
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  </script>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>agomoni-home</title>
+
+<link rel="shortcut icon" type="image/jpg" href="img/logo.jpeg">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+<script data-ad-client="ca-pub-5657296610960679" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  *{
+    scroll-behavior: smooth;
+  }
+  body{
+      background-color: rgba(96, 221, 163, 0.712);
+      height: 100%;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile
+{
+    width: 25%;
+    border-radius: 150px;
+    padding: 15px;
+}
+.profile1{
+    display: flex;
+}
+.Name
+{
+    padding-left: 5%;
+    font-size: 50px;
+    font-family: cursive;
+}
+.Username
+{
+    font-size: 30px;
+}
+.Numbers
+{
+    font-size: 25px;
+}
+.button
+{
+    height: 50px;
+    width: 130px;
+    border-radius: 20px;
+    background-color: rgb(48, 7, 87);
+    font-size: 25px;
+}
+.posts
+{
+    height: 270px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 40px;
+}
+@media (max-width: 550px) and (min-width: 354px)
+{
+    .profile
+    {
+        width: 37%;
+        height: 38%;
+        border-radius: 150px;
+        padding: 15px;
+    }
+    .Name{
+        font-size: 30px;
+    }
+    .Username{
+        font-size: 20px;
+    }
+    .Numbers{
+        font-size: 15px;
+    }
+    .button
+    {
+        height: 25px;
+        width: 90px;
+        border-radius: 20px;
+        color:burlywood;
+        background-color: rgb(48, 7, 87);
+        font-size: 15px;
+    }
+}
+@media (max-width: 354px) and (min-width: 336px)
+{
+    .profile
+    {
+        width: 35%;
+        border-radius: 150px;
+        padding: 15px;
+    }
+    .Name{
+        font-size: 25px;
+    }
+    .Username{
+        font-size: 17px;
+    }
+    .Numbers{
+        font-size: 15px;
+    }
+    .button
+    {
+        height: 25px;
+        width: 90px;
+        border-radius: 20px;
+        color:burlywood;
+        background-color: rgb(48, 7, 87);
+        font-size: 15px;
+    }
+}
+@media (max-width: 336px) and (min-width:279px)
+{
+    .profile
+    {
+        width: 130px;
+        height: 130px;
+        border-radius: 150px;
+        padding: 1px;
+    }
+    .Name{
+        font-size: 20px;
+    }
+    .Username{
+        font-size: 12px;
+    }
+    .Numbers{
+        font-size: 12px;
+    }
+    .button
+    {
+        height: 25px;
+        width: 60px;
+        border-radius: 20px;
+        color:burlywood;
+        background-color: rgb(48, 7, 87);
+        font-size: 10px;
+    }
+}
+@media (max-width: 280px)
+{
+    .profile
+    {
+        width: 90px;
+        height: 90px;
+        border-radius: 150px;
+        padding: 1px;
+    }
+    .Name{
+        font-size: 20px;
+    }
+    .Username{
+        font-size: 12px;
+    }
+    .Numbers{
+        font-size: 12px;
+    }
+    .button
+    {
+        height: 25px;
+        width: 60px;
+        border-radius: 20px;
+        color:burlywood;
+        background-color: rgb(48, 7, 87);
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1180px) and (min-width:984px)
+{
+  .posts
+  {
+      height: 200px;
+      width: 300px;
+      padding: 10px;
+      border-radius: 40px;
+  }
+}
+@media (max-width:985px) and (min-width:740px)
+{
+  .posts
+  {
+      height: 200px;
+      width: 230px;
+      padding: 10px;
+      border-radius: 40px;
+  }
+}
+@media (max-width:739px) and (min-width:640px)
+{
+  .posts
+  {
+      height: 150px;
+      width: 200px;
+      padding: 10px;
+      border-radius: 40px;
+  }
+}
+@media (max-width:639px) and (min-width:560px)
+{
+  .posts
+  {
+      height: 150px;
+      width: 180px;
+      padding: 10px;
+      border-radius: 40px;
+  }
+}
+@media (max-width:560px) and (min-width:490px)
+{
+  .posts
+  {
+      height: 130px;
+      width: 150px;
+      padding: 10px;
+      border-radius: 40px;
+  }
+}
+@media (max-width:490px) and (min-width:450px)
+{
+  .posts
+  {
+      height: 120px;
+      width: 140px;
+      padding: 10px;
+      border-radius: 40px;
+  }
+}
+@media (max-width:451px) and (min-width:420px)
+{
+  .posts
+  {
+      height: 120px;
+      width: 130px;
+      padding: 10px;
+      border-radius: 40px;
+  }
+}
+@media (max-width:420px) and (min-width:320px)
+{
+  .posts
+  {
+      height: 90px;
+      width: 100px;
+      padding: 2px;
+      border-radius: 20px;
+  }
+}
+@media (max-width:320px) and (min-width:10px)
+{
+  .posts
+  {
+      height: 60px;
+      width: 80px;
+      padding: 1px;
+      border-radius: 15px;
+  }
+}
+
+@media (max-width: 280px)
+{
+    .profile
+    {
+        width: 90px;
+        height: 90px;
+        border-radius: 150px;
+        padding: 1px;
+    }
+    .Name{
+        font-size: 20px;
+    }
+    .Username{
+        font-size: 12px;
+    }
+    .Numbers{
+        font-size: 12px;
+    }
+    .button
+    {
+        height: 25px;
+        width: 60px;
+        border-radius: 20px;
+        color:burlywood;
+        background-color: rgb(48, 7, 87);
+        font-size: 10px;
+    }
+}
+#messages:target
+{
+    display: none;
+}
+#post:target
+{
+    display: none;
+}
+.header
+{
+  font-size: 35px;
+  font-family: "Montez",cursive;
+}
+.texts
+{
+  font-size: 30px;
+  font-family: 'Noto Serif',serif;
+}
+.hr_style
+{
+  height: 2px;
+  border-radius: 4px;
+  background:linear-gradient(to left,  rgb(198, 241, 128),rgb(226, 226, 55));
+}
+@media (max-width: 505px) and (min-width:366px)
+{
+  .header
+  {
+    font-size: 20px;
+  }
+  .texts
+  {
+    font-size: 15px;
+  }
+}
+@media (max-width: 366px)
+{
+  .header
+  {
+    font-size: 23px;
+  }
+  .texts
+  {
+    font-size: 15px;
+  }
+}
+</style>
+
+<script data-ad-client="ca-pub-7316428934332522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <div class="row" style="background-color: #1c3048; margin: 0%;">
+      <div class="col-xs-3 col-sm-3 col-md-1 col-lg-1" align="right">
+        <a href="Agomonihomefull.php"><img src="White.png" style="height: 90px;width: 90px; margin: 10%;"></a>
+      </div>
+        <a href="Agomonihomefull.php">
+          <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h2 style="color: #ff7e84; font-family: 'Montez', cursive; font-size: 50px;" class="heading1">agomoni</h2>
+            <h4 style="color: #ff7e84; font-family: 'Montez', cursive;" class= "heading2">More than Family</h4>
+          </div>
+        </a>
+    </div>
+    <nav class="navbar navbar-inverse navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#" style="margin-start: 10%;"><b style="color:white;">Discover Us:</b></a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Log in</a></li>
+                <li><a href="#section3">Explore</a></li>
+                <li><a href="#section5">Updates</a></li>
+                <li><a href="#section4">About Us</a></li>
+                <li><a href="#section6">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container">
+        <div class="profile1">
+          <img src="Picture.jpg" class="profile">
+          <div class="Name">
+              Gary Neville<br>
+              <div class="Username">
+                 nevillegary02
+              </div>
+              <div class="Numbers">
+                  <span class="DonaldTrump">
+                      <b>200</b>
+                  </span>
+                  <span class="Individual">
+                      Messages
+                      <b>200 </b> Posts
+                  </span>
+              </div>
+              <div class="Buttons-Section">
+                  <button class="button post-click" onclick="reload()"><a href="index.html" style="color: burlywood; text-decoration: none;">Posts</a></button>
+                  <button class="button message-click" onclick="change_message()"><a href="#post" style="color: burlywood; text-decoration: none;">Messages</a></button>
+              </div>
+          </div>
+        </div>
+        <script>
+          function reload(){
+            location.reload;
+          }
+        </script>
+        <div id="post-div">
+        <div class="post" id="post">
+            <div class="gallery">
+                <img src="Gallery1.jpg" alt="" class="posts">
+                <img src="Gallery2.jpg" alt="" class="posts">
+                <img src="Gallery3.jpg" alt="" class="posts">
+              </div>
+              <div class="gallery">
+                <img src="Gallery2.jpg" alt="" class="posts">
+                <img src="Gallery1.jpg" alt="" class="posts">
+                <img src="Gallery3.jpg" alt="" class="posts">
+              </div>
+              <div class="gallery">
+                <img src="Gallery3.jpg" alt="" class="posts">
+                <img src="Gallery2.jpg" alt="" class="posts">
+                <img src="Gallery1.jpg" alt="" class="posts">
+              </div>
+        </div>
+        </div>
+        <script>
+          function change_message(){
+            document.getElementById("post-div").innerHTML = "<div class='messages' id='messages'><div class='header'>My Messages</div><hr class= 'hr_style'> </hr><ul> <li> <span class='texts'>Message 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, aut?</span></li><li><span class='texts'>Message 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit!</span></li><li><span class='texts'>Message 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, id.</span></li><li><span class='texts'>Message 1 Lorem ipsum dolor sit amet consectetur adipisicing.</span></li></ul></div>";
+          }
+          </script>
+      </div>
+    </body>
+</html>
