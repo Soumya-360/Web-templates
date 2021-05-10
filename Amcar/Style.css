@@ -1,0 +1,28 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav
+{
+    margin-top: 10px;
+}
+.buttons
+{
+    font-size: 30px;
+    margin-left: 58%;
+}
+.button
+{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.Logo
+{
+    position: absolute;
+    height: 70px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
