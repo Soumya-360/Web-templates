@@ -26,3 +26,43 @@ nav
     margin-left: 30px;
     margin-top: -10px;
 }
+.jumbotron
+{
+    margin-left: 4px;
+    height: 570px;
+    width: 1340px;
+}
+.Initiative
+{
+    height: 570px;
+    width: 1340px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+.header
+{
+    text-align: center;
+    font-size: 50px;
+}
+.details_our_initiative
+{
+    height: 500px;
+    display: flex;
+}
+.founders_words
+{
+    height: 500px;
+    width: 900px;
+    font-size: 25px;
+    padding: 100px;
+}
+.picture_our_initiative
+{
+    height: 500px;
+    width: 600px;
+    padding-left: 60px;
+}
+.our_initiative_pic
+{
+    height: 500px;
+}
